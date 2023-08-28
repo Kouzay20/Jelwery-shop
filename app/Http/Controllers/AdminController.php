@@ -82,10 +82,10 @@ class AdminController extends Controller
     public function save(Request $request)
     {
         $ad= new Admin();
-        $ad->adminID = $request->id;
-        $ad->adminname = $request ->name;
-        $ad->adminpassword = $request->password;
-        $ad->adminPhoto = $request->photo;
+        $ad->adminID = $request->adminID;
+        $ad->adminname = $request ->adminname;
+        $ad->adminpassword = $request->adminpassword;
+        $ad->adminPhoto = $request->adminPhoto;
         
         $ad->save();
         return redirect()->back()->with('success','added successfully');

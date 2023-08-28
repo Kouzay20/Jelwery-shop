@@ -95,7 +95,7 @@ br{
             <span class="nav-link-text ms-1">Sign In</span>
           </a>
         </li> --}}
-        
+
       </ul>
     </div>
     {{-- <div class="sidenav-footer mx-3 ">
@@ -244,38 +244,38 @@ br{
                 @endif
                 <form action="{{url('save')}}" method="POST">
                     @csrf
-            
+
                     <div class="mb-3 mt-3">
                       <label for="id">Admin ID:</label>
-                      <input type="text" class="form-control" id="id" 
-                      name="id">
+                      <input type="text" class="form-control" id="adminID"
+                      name="adminID">
                     </div>
                     <div class="mb-3 mt-3">
                       <label for="name">Admin Name:</label>
                       <input type="text" class="form-control" id="name"
-                      name= "name">
+                      name= "adminname">
                     </div>
                     <div class="mb-3 mt-3">
                       <label for="password">Admin password:</label>
-                      <input type="text" class="form-control" id="password"
-                       name="password">
+                      <input type="text" class="form-control" id=""
+                       name="adminpassword">
                     </div>
-            
+
                     <div class="mb-3 mt-3">
                       <label for="photo">Admin Photo:</label>
                       <input type="file" class="form-control" id="photo"
-                       name="photo">
-                     
+                       name="adminPhoto">
+
                     </div>
-            
-            
+
+
                     <button type="submit" class="btn btn-primary">Add</button>
                     <a href="{{url('admin/adminlist')}}" class="btn btn-danger"> Back </a>
                 </form>
               </div>
           </div>
           </div>
-         
+
     </div>
   </main>
   <div class="fixed-plugin">

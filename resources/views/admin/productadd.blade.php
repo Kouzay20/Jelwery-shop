@@ -17,23 +17,23 @@
                 {{Session::get('success')}}
             </div>
         @endif
-        <form action="{{url('save')}}" method="POST">
+        <form action="{{url('saveProduct')}}" method="POST">
             @csrf
           <div class="mb-3 mt-3">
             <label for="id">Product ID:</label>
-            <input type="text" class="form-control" id="id" 
+            <input type="text" class="form-control" id="id"
                    placeholder="Enter product id" name="id">
-                  
+
           </div>
           <div class="mb-3 mt-3">
             <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" 
-                   placeholder="Enter product name" name="name">
-                
+            <input type="text" class="form-control" id=""
+                   placeholder="Enter product name" name="">
+
           </div>
           <div class="mb-3 mt-3">
             <label for="price">Price:</label>
-            <input type="number" class="form-control" id="price" 
+            <input type="number" class="form-control" id="price"
                    placeholder="Enter product price" name="price">
           </div>
           <div class="mb-3 mt-3">
@@ -49,7 +49,7 @@
             <select name="category" id="category" class="form-control">
                 @foreach ($category as $cat)
                 <option value="{{$cat->catID}}">{{$cat->catName}}</option>
-                @endforeach                
+                @endforeach
             </select>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>

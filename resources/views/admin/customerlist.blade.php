@@ -19,9 +19,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="{{url('admin/adminindex')}}">
+  <link rel="icon" type="image/png" href="{{url('admin/indexs')}}">
   <title>
-    Customer Profile
+    Customer List
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -64,7 +64,7 @@ br{
   <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href=" {{url('admin/adminindex')}} " target="_blank">
+      <a class="navbar-brand m-0" href=" {{url('admin/indexs')}} " target="_blank">
         <img src="./assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
         <span class="ms-1 font-weight-bold">Argon Dashboard 2</span>
       </a>
@@ -73,7 +73,7 @@ br{
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link " href="{{url('admin/adminindex')}}">
+<a class="nav-link " href="{{url('admin/adminindex')}}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
             </div>
@@ -112,33 +112,33 @@ br{
             <span class="nav-link-text ms-1">RTL</span>
           </a>
         </li> --}}
-        <li class="nav-item mt-3">
+        {{-- <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="{{url('admin/customerlist')}}">
+        </li> --}}
+        {{-- <li class="nav-item">
+          <a class="nav-link " href="{{url('admin/customershow')}}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Profile</span>
           </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="{{url('customers/customerlogin')}}">
+        </li> --}}
+        {{-- <li class="nav-item">
+          <a class="nav-link " href="{{url('customers/login')}}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-single-copy-04 text-warning text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Sign In</span>
+<span class="nav-link-text ms-1">Sign In</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="{{url('customers/customerregister')}}">
+          <a class="nav-link " href="{{url('customers/register')}}">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-collection text-info text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Sign Up</span>
           </a>
-        </li>
+        </li> --}}
       </ul>
     </div>
     {{-- <div class="sidenav-footer mx-3 ">
@@ -161,10 +161,10 @@ br{
       <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Edit Profile</a></li>
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Customer Edit</a></li>
             <li class="breadcrumb-item text-sm text-white active" aria-current="page">Customer</li>
           </ol>
-          <h6 class="font-weight-bolder text-white mb-0">Customer</h6>
+          <h6 class="font-weight-bolder text-white mb-0">Customer List</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -174,14 +174,14 @@ br{
             </div>
           </div>
           <ul class="navbar-nav  justify-content-end">
-            <li class="nav-item d-flex align-items-center">
+            {{-- <li class="nav-item d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-white font-weight-bold px-0">
                 <i class="fa fa-user me-sm-1"></i>
                 <span class="d-sm-inline d-none">Sign In</span>
               </a>
-            </li>
+            </li> --}}
             <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
+<a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
                 <div class="sidenav-toggler-inner">
                   <i class="sidenav-toggler-line bg-white"></i>
                   <i class="sidenav-toggler-line bg-white"></i>
@@ -238,7 +238,7 @@ br{
                 <li>
                   <a class="dropdown-item border-radius-md" href="javascript:;">
                     <div class="d-flex py-1">
-                      <div class="avatar avatar-sm bg-gradient-secondary  me-3  my-auto">
+<div class="avatar avatar-sm bg-gradient-secondary  me-3  my-auto">
                         <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                           <title>credit-card</title>
                           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -277,14 +277,14 @@ br{
       <div class="container" style="margin-top:20px">
         <div class="row">
             <div class="col-md-12">
-                <h2>Customer Profile</h2>
+                <h2 style="text-align: center; color:white;">Customer List</h2>
                 @if (Session::has('success'))
                     <div class="alert alert-success">
                         {{Session::get('success')}}
                     </div>
                 @endif
                 <div style="margin-right: 5%; margin-bottom: 20px; float:right">
-                    <a href="{{url('admin/customeredit')}}" class="btn btn-primary">Add</a>
+                    <a href="{{url('admin/add')}}" class="btn btn-primary"></a>
                 </div>
                 <table class="table table-hover">
                     <thead class="table-success">
@@ -294,8 +294,6 @@ br{
                             <th>Customer Address</th>
                             <th>Customer Phone</th>
                             <th>Customer Photo</th>
-
-
                         </tr>
                     </thead>
                     <tbody>
@@ -304,11 +302,13 @@ br{
                             <td>{{$customers ->customerEmail}}</td>
                             <td>{{$customers ->customerName}}</td>
                             <td>{{$customers ->customerAddress}}</td>
+
                             <td>{{$customers ->customerPhone}}</td>
-                            <td><img src="{{url('customer_img/'.$customers ->customerPhoto)}}" style="height:100px; width:100px;"></td>
+
+                            <td><img src="{{url('customer_img/'.$customers ->customerPhoto)}}" style = "height: 120px; witdh: 120px; margin-left: 80px"></td>
                             <td>
                                 <a href="{{url('admin/customeredit/'.$customers->customerEmail)}}" title="Edit this product"><i class="fa-solid fa-pen-to-square" style="color: #000000;"></i></a>&nbsp;
-                                <a href="{{url('admin/customerdelete/'.$customers->customerEmail)}}" title="Delete this product"><i class="fa-solid fa-trash" style="color: #090c11;"></i></a>
+                                <a href="{{url('admin/customerdelete/'.$customers->customerEmail)}}" title="Delete this product"><i class="fa-solid fa-trash" style="color: #090c11;" onclick="return confirm('Do you want to delete it?')"></i></a>
 
 
                                 </a>
@@ -331,13 +331,13 @@ br{
           </div>
           <!-- Modal body -->
           <div class="modal-body" style="font-weight: bold; color:royalblue;">
-              Are you sure delete this product?
+              Are you sure delete this customer?
           </div>
           <!-- Modal footer -->
-          <div class="modal-footer">
-              <a href="{{url('admin/customerdelete/'.$customers->customerEmail)}}"> <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">Yes</button></a>
+          {{-- <div class="modal-footer">
+              <a href="{{url('admin/delete/'.$customers->customerEmail)}}"> <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">Yes</button></a>
               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No</button>
-          </div>
+          </div> --}}
       </div>
       </div>
   </div>
@@ -351,7 +351,7 @@ br{
                 © <script>
                   document.write(new Date().getFullYear())
                 </script>,
-                made with <i class="fa fa-heart"></i> by
+made with <i class="fa fa-heart"></i> by
                 <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
                 for a better web.
               </div>
@@ -413,7 +413,7 @@ br{
         <!-- Sidenav Type -->
         <div class="mt-3">
           <h6 class="mb-0">Sidenav Type</h6>
-          <p class="text-sm">Choose between 2 different sidenav types.</p>
+<p class="text-sm">Choose between 2 different sidenav types.</p>
         </div>
         <div class="d-flex">
           <button class="btn bg-gradient-primary w-100 px-3 mb-2 active me-2" data-class="bg-white" onclick="sidebarType(this)">White</button>
@@ -460,7 +460,7 @@ br{
       var options = {
         damping: '0.5'
       }
-      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
   </script>
   <!-- Github buttons -->

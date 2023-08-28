@@ -42,9 +42,9 @@ Route::get('admin/logout',[AdminController::class,'logout'])->name('logout');
 
 /*Product manage*/
 Route::get('admin/productlist',[ProductController::class,'productsAdmin'])->name('productlist');
-Route::get('admin/addproduct',[ProductController::class,'productsAdd'])->name('addproduct');
-Route::get('admin/productadd',[ProductController::class,'productadd']);
-Route::post('save',[ProductController::class,'save']);
+Route::get('admin/productadd',[ProductController::class,'productsAdd'])->name('addproduct');
+// Route::get('admin/productadd',[ProductController::class,'productadd']);
+Route::post('saveProduct',[ProductController::class,'save']);
 Route::get('admin/productedit/{id}',[ProductController::class,'productedit']);
 Route::post('update',[ProductController::class,'update']);
 Route::get('admin/delete/{id}',[ProductController::class,'delete']);

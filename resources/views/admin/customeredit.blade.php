@@ -252,7 +252,7 @@
 
 
       <div class="container mt-3">
-        <h2>Update product</h2>
+        <h2>Update Customer</h2>
         @if (Session::has('success'))
           <div class="alert alert-success" role ="alert">
             {{Session::get('success')}}
@@ -273,7 +273,7 @@
             </div>
             <div class="mb-3 mt-3">
               <label for="price">Address:</label>
-              <input type="number" class="form-control" id="address"
+              <input type="text" class="form-control" id="address"
                   value = "{{$data->customerAddress}}" name="address">
             </div>
             <div class="mb-3 mt-3">
@@ -283,36 +283,18 @@
             </div>
             <div class="mb-3 mt-3">
               <label for="photo">Photo:</label>
-              <input type="file" class="form-control" id="photo" name="photo">
-              <input type ="text" class ="form-control" id ="old_photo" name ="photo"
+              <input type="file" class="form-control" id="" name="">
+              {{-- <input type ="text" class ="form-control" id ="old_photo" name ="photo" --}}
                   value = "{{$data->customerPhoto}}">
             </div>
 
-
-            {{-- <div class="mb-3 mt-3">
-              <label for="details">Details:</label>
-              <textarea class="form-control" rows="5" id="details" name="details">
-                  {{ $data->productdetail}}
-              </textarea>
-            </div>
-
-            <div class="mb-3 mt-3">
-              <label for="category">Category:</label>
-              <select name="category" id="category" >
-                  @foreach ($category as $cat)
-                  <option value="{{$cat->catID}}"
-                      {{$cat->catID ==$data->catID ? 'checked' : ''}}>
-                      {{$cat->catName}}</option>
-                  @endforeach
-              </select>
-            </div> --}}
 
             <button type="submit" class="btn btn-primary">update</button>
             <a href="{{url('admin/customerlist')}}" class="btn btn-danger"> Back </a>
         </form>
       </div>
-      
-      
+
+
       <footer class="footer pt-3  ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">
